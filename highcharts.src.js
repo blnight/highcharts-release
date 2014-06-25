@@ -9042,7 +9042,7 @@ Pointer.prototype = {
 			this.followTouchMove = options.tooltip.followTouchMove;
 		}
 
-		this.setDOMEvents();
+		// this.setDOMEvents();
 	}, 
 
 	/**
