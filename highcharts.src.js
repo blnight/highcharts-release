@@ -1112,7 +1112,7 @@ pathAnim = {
 		 * @param {Function} fn The event handler
 		 */
 		addEvent: function (el, event, fn) {
-			$(el).bind(event, fn);
+			// $(el).bind(event, fn);
 		},
 	
 		/**
@@ -1266,7 +1266,7 @@ var adapterRun = adapter.adapterRun,
 	grep = adapter.grep,
 	offset = adapter.offset,
 	map = adapter.map,
-	addEvent = adapter.addEvent,
+	addEvent = function(){},
 	removeEvent = adapter.removeEvent,
 	fireEvent = adapter.fireEvent,
 	washMouseEvent = adapter.washMouseEvent,
@@ -9042,7 +9042,7 @@ Pointer.prototype = {
 			this.followTouchMove = options.tooltip.followTouchMove;
 		}
 
-		this.setDOMEvents();
+		// this.setDOMEvents();
 	}, 
 
 	/**
